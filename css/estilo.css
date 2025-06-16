@@ -38,11 +38,13 @@ body {
 }
 
 .card-img-top {
-    height: 300px; /* Altura fixa para as capas. */
-    object-fit: cover; /* A imagem cobre a área sem distorcer. */
+    width: 100%;
+    height: auto;
+    object-fit: contain;
     border-top-left-radius: 0.75rem;
     border-top-right-radius: 0.75rem;
 }
+
 
 .card-body {
     padding: 1.25rem;
