@@ -1,0 +1,175 @@
+/* Estilos gerais para o corpo do site. */
+body {
+    background-color: #f8f9fa; /* Cinza claro para o fundo. */
+    color: #343a40; /* Cor de texto padrão. */
+}
+
+/* Estilos da barra de navegação. */
+.navbar {
+    border-bottom: 1px solid #e9ecef; /* Linha sutil na parte inferior. */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.75); /* Cor padrão dos links. */
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ffc107; /* Amarelo no hover e ativo. */
+}
+
+/* Estilos para os cards de filmes. */
+.card {
+    border: none; /* Remove a borda padrão. */
+    border-radius: 0.75rem; /* Bordas arredondadas. */
+    overflow: hidden; /* Garante que a imagem siga o border-radius. */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efeito de "levantar". */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra mais pronunciada. */
+}
+
+.card-img-top {
+    height: 300px; /* Altura fixa para as capas. */
+    object-fit: cover; /* A imagem cobre a área sem distorcer. */
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.card-text small {
+    font-size: 0.85rem;
+    color: #6c757d !important;
+}
+
+/* Estilos para botões. */
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #212529; /* Cor do texto para contraste. */
+    font-weight: 500;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #e0a800;
+    color: #212529;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    color: #fff;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+    border-color: #117a8b;
+}
+
+
+/* Estilos para formulários. */
+.form-control:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
+}
+
+/* Estilos para alertas. */
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+    color: #0c5460;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    color: #856404;
+}
+
+
+/* Estilos para o rodapé. */
+footer {
+    background-color: #e9ecef;
+    border-top: 1px solid #dee2e6;
+    padding: 1.5rem 0;
+    margin-top: 3rem; /* Espaçamento superior. */
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: #495057; /* Cor para os ícones do rodapé. */
+    transition: color 0.2s ease-in-out;
+}
+
+footer a:hover {
+    color: #000; /* Cor preta no hover. */
+}
+
+/* Estilos para o ícone Letterboxd no rodapé. */
+.letterboxd-icon {
+    height: 26px; /* Altura do ícone. */
+    width: 26px;  /* Largura do ícone. */
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+/* Estilos para a imagem de detalhes do filme. */
+.img-fluid.rounded {
+    border-radius: 0.5rem !important; /* Arredonda a imagem. */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
